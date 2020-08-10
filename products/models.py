@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Category(models.Model):
 
@@ -13,7 +12,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-    def __get_friendly_name(self):
+    def get_friendly_name(self):
         return self.friendly_name
 
 
